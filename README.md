@@ -8,7 +8,7 @@ Currently, numerous modules capable of wireless communication are available, but
 The HC-12 is a half-duplex wireless serial communication module with 100 channels in the 433.4-473.0 MHz range that is capable of transmitting up to 1 km.
 HC-12 wireless serial port communication module is a new-generation multichannel embedded wireless data transmission module. Its wireless working frequency band is 433.4-473.0MHz, multiple channels can be set, with the stepping of 400 KHz, and there are totally 100 channels. The maximum transmitting power of module is 100mW (20dBm), the receiving sensitivity is -117dBm at baud rate of 5,000bps in the air, and the communication distance is 1,000m in open space. The module is encapsulated with stamp hole, can adopt patch welding, and its dimension is 27.8mm × 14.4mm × 4mm (including antenna cap, excluding spring antenna), so it is very convenient for customers to go into application system. There is a PCB antenna pedestal ANT1 on the module, and user can use external antenna of 433M frequency band through coaxial cable; there is also an antenna solder eye ANT2 in the module, and it is convenient for user to weld spring antenna. User could select one of these antennas according to use requirements. There is MCU inside the module, and user don’t need to program the module separately, and all transparent transmission mode is only responsible for receiving and sending serial port data, so it is convenient to use. 
 
-![HC-12 module](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/HC-12.PNG?raw=true "Optional Title")
+![HC-12 module](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Assets/HC-12.PNG?raw=true "Optional Title")
 
 # LoRa : Long Range Radio
 LoRa enables long-range transmissions (more than 10 km in rural areas) with low power consumption. The technology covers the physical layer, while other technologies and protocols such as LoRaWAN (Long Range Wide Area Network) cover the upper layers. LoRa devices and the open LoRaWAN protocol enable smart IoT applications that solve some of the biggest challenges facing our planet: energy management, natural resource reduction, pollution control, infrastructure efficiency, disaster prevention, and more.
@@ -20,12 +20,12 @@ Cryptography is a technique of securing information and communications through u
 # Arduino IDE
 The Arduino Integrated Development Environment (IDE) is a cross-platform application (for Windows, macOS, Linux) that is written in functions from C and C++. It is used to write and upload programs to Arduino compatible boards, but also, with the help of 3rd party cores, other vendor development boards. The source code for the IDE is released under the GNU General Public License, version 2. The Arduino IDE supports the languages C and C++ using special rules of code structuring. The Arduino IDE supplies a software library from the Wiring project, which provides many common input and output procedures. User-written code only requires two basic functions, for starting the sketch and the main program loop, that are compiled and linked with a program stub main() into an executable cyclic executive program with the GNU toolchain, also included with the IDE distribution. The Arduino IDE employs the program avrdude to convert the executable code into a text file in hexadecimal encoding that is loaded into the Arduino board by a loader program in the board's firmware. By default, avrdude is used as the uploading tool to flash the user code onto official Arduino boards. With the rising popularity of Arduino as a software platform, other vendors started to implement custom open source compilers & tools (cores) that can build and upload sketches to other MCUs that are not supported by Arduino's official line of MCUs. In October 2019 the Arduino organization began providing early access to a new Arduino Pro IDE with debugging and other advanced features. The website to download Arduino IDE https://www.arduino.cc/en/Main/Software
 
-![Arduino IDE](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Arduino-IDE.PNG?raw=true "Optional Title")
+![Arduino IDE](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Assets/Arduino-IDE.PNG?raw=true "Optional Title")
 
 # Arduino Uno
 Arduino Uno is a microcontroller board based on the ATmega328P (datasheet). It has 14 digital input/output pins, 6-analog inputs, a 16 MHz ceramic resonator (CSTCE16M0V53-R0), a USB connection, a power jack, an ICSP header and a reset button. It contains everything needed to support the microcontroller; simply connect it to  a computer with a USB cable or power it with an AC-to-DC adapter or battery to get started.
 
-![Arduino Uno](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Arduino-uno.PNG?raw=true "Optional Title")
+![Arduino Uno](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Assets/Arduino-uno.PNG?raw=true "Optional Title")
 
 # Proposed Algorithm
 The more popular and widely adopted symmetric encryption algorithm is the Advanced Encryption Standard (AES). It is found that AES is much faster than RSA.
@@ -47,37 +47,37 @@ The features of RSA are as follows -
 # Flow Chart
 The below figures show the developed flow chart of the message generated and the received:
 
-![Transmission Flow Chart](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Transmission-Flow-Chart.PNG?raw=true "Optional Title")
+![Transmission Flow Chart](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Assets/Transmission-Flow-Chart.PNG?raw=true "Optional Title")
 
-![Reception Flow Chart](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Reception-Flow-Chart.PNG?raw=true "Optional Title")
+![Reception Flow Chart](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Assets/Reception-Flow-Chart.PNG?raw=true "Optional Title")
 
 # System Design
 The block diagram of wireless communication using Arduino integrated with HC-12 is as shown below:
 
-![Design](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/System%20Design.png?raw=true "Optional Title")
+![Design](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Assets/System%20Design.png?raw=true "Optional Title")
 
 Initially, the Arduino and HC12 components are connected to the respective sender and receiver system. The circuit schematic is as shown in the figure 5. The operating voltage of the module is from 3.2 V to 5.5 V. In this work, PC USB is used as a power to the components. Since the developed work is a two-way communication system, the same code is used for both the Arduinos. Arduino HC12 setup can either be made on two separate computers or a single computer. Arduino IDE is an open source software which can be used to write the code and upload it on Arduino component. Serial monitor is used for transmitting and receiving message.
 
 # Circuit Diagram of Proposed Model
-![Circuit Diagram](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Circuit-Diagram.PNG?raw=true "Optional Title")
+![Circuit Diagram](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Assets/Circuit-Diagram.PNG?raw=true "Optional Title")
 
 # Working
 
 Enter the data to be sent
 
-![Enter data](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Enter-Data-Monitor.PNG?raw=true "Optional Title")
+![Enter data](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Assets/Enter-Data-Monitor.PNG?raw=true "Optional Title")
 
 Entered 16-bit data
 
-![Enter data](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Entered-Data.PNG?raw=true "Optional Title")
+![Enter data](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Assets/Entered-Data.PNG?raw=true "Optional Title")
 
 At sender side, the original message is entered. The AES or RSA algorithm is used to encrypt the message. After the encryption, the encrypted message is displayed and sent to receiver with the help of HC-12 module.
 
-![Encryption](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Encrypted.PNG?raw=true "Optional Title")
+![Encryption](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Assets/Encrypted.PNG?raw=true "Optional Title")
 
 At the receiver side, encrypted message which was sent by the sender gets decrypted using AES or DES algorithm and the original message is displayed on the serial monitor as shown in the figure
 
-![Decryption](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Decrypted.PNG?raw=true "Optional Title")
+![Decryption](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Assets/Decrypted.PNG?raw=true "Optional Title")
 
 # Sender side Analysis
 At sender side, original message that needs to be transmitted is entered on serial monitor of the sender. AES or RSA algorithms are used to encrypt the original message into a form, where attackers fail to distinguish the original message. After the encryption, encrypted message is sent to the receiver system. The figure 9.1 shows the sender side transmission.
@@ -92,19 +92,19 @@ Below table is the analysis that we have made with varying distances and number 
 
 Distance : 40 meters 
 
-![40meters](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/TableFor40m.jpg?raw=true "Optional Title")
+![40meters](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Assets/TableFor40m.jpg?raw=true "Optional Title")
 
 Distance : 100 meters 
 
-![100meters](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/TableFor100m.jpg?raw=true "Optional Title")
+![100meters](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Assets/TableFor100m.jpg?raw=true "Optional Title")
 
 Distance : 200 meters 
 
-![200meters](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/TableFor200m.jpg?raw=true "Optional Title")
+![200meters](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Assets/TableFor200m.jpg?raw=true "Optional Title")
 
 Distance : 400 meters 
 
-![400meters](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/TableFor400m.jpg?raw=true "Optional Title")
+![400meters](https://github.com/Sankalpjadhav/Secure-Wireless-Communication-in-MANETs-using-HC-12-Module/blob/main/Assets/TableFor400m.jpg?raw=true "Optional Title")
 
 # Conclusion
 In this work, an authenticated user can able to send and receive the message, thus eliminating the security issue. This two-way communication system restricts unauthorized access to the messages that is taking place between two nodes. Companies and government sectors can use this system to communicate between their employees. Agriculture sectors can also use this work in order to maintain relations with their buyers. In this project, a detailed comparison is made between two standard algorithms, namely AES and RSA. The system is designed as user friendly and its operation is quite simple.
